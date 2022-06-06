@@ -1,0 +1,18 @@
+{
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "autoCompile": true
+  },
+  "appid": "tt4e7b38c6d1458c5601",
+  "projectname": "mypicture",
+  "condition": {
+    "miniprogram": {
+      "current": -1,
+      "list": []
+    }
+  }
+}
