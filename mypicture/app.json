@@ -1,11 +1,42 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/wallpaper/wallpaper",
+    "pages/emoticon/emoticon",
+    "pages/my/my"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Mini Program",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "./images/icon/home.png",
+        "selectedIconPath": "./images/icon/home.png"
+      },
+      {
+        "pagePath": "pages/wallpaper/wallpaper",
+        "text": "壁纸",
+        "iconPath": "./images/icon/wallpaper.png",
+        "selectedIconPath": "./images/icon/wallpaper.png"
+      },
+      {
+        "pagePath": "pages/emoticon/emoticon",
+        "text": "表情包",
+        "iconPath": "./images/icon/emoticon.png",
+        "selectedIconPath": "./images/icon/emoticon.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/icon/my.png",
+        "selectedIconPath": "./images/icon/my.png"
+      }
+    ]
   }
 }

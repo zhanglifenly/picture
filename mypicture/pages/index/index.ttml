@@ -1,20 +1,19 @@
+<import src="../search/search.ttml" />
 <view class="container">
-    <view class="search">
-        <input type="text" placeholder="搜索" class="search-txt" />
-        <icon class="search-icon" type="search"></icon>
-    </view>
+    <template is="search"></template>
     <view>
         <view class="c-title">栏目分类</view>
         <view class="navbar">
             <view class="item" tt:for="{{navbarList}}">
-                <image src="{{item.src}}" bindload="bindload"></image>
-                <view>{{item.title}}</view>
+                <image src="{{item.src}}" bindload="bindload" class="poster"></image>
+                <view class="txt">{{item.title}}</view>
             </view>
         </view>
     </view>
+    <view class="c-title">猜你喜欢</view>
     <view class="favorite">
         <view class="item" tt:for="{{favoriteList}}">
-            <image src="{{item.src}}"> </image>
+            <image src="{{item.src}}" class="poster"> </image>
         </view>
     </view>
 </view>

@@ -7,5 +7,10 @@
 .c-title{color:#fd573e;font-size: 16px;font-weight: bold;display: flex;flex-direction: row;padding:6px;}
 .c-title::before{content: "";width: 2px;height: 20px;background-color: #fd573e;display: inline-block;margin-right: 6px;}
 
-.navbar .item image{width: 40px;height: 40px;border-radius: 50%;background-color: #fd573e;}
-.navbar .favorite {}
+.navbar {display: flex;flex-direction: row;align-items: center;justify-content: center;}
+.navbar .item{flex: 1;text-align: center;margin:30rpx 0;}
+.navbar .item .poster{width: 120rpx;height: 120rpx;border-radius: 50%;background-color: #fd573e;}
+.navbar .item .txt{font-size: 14px;}
+.favorite {display: flex;flex-direction: row;flex-wrap: wrap;}
+.favorite .item{width: 50%;padding:10rpx;box-sizing: border-box;}
+.favorite .item .poster{width: 100%;background-color: #fd573e;}

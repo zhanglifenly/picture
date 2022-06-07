@@ -14,9 +14,15 @@ Page({
       {
         title: '333',
         src: './'
+      },
+      {
+        title: '444',
+        src: './'
       }
     ],
     favoriteList: [
+      {src: './/'},
+      {src: './/'},
       {src: './/'}
     ]
   },
