@@ -1,0 +1,4 @@
+.search{padding:10px;border: 1px solid #fd573e;background-color: #fd573e;display: flex;flex-direction: row;align-items: center;color:#fff}
+.search input {width: 100%;font-size: 14px;color:#fff;}
+.search .search-icon{color:#fff;}
+.search input::-moz-input-placeholder{color:#fff;}
