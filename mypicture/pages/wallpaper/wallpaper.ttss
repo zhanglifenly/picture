@@ -1,1 +1,3 @@
-/* i:\个人学习资料\xcx-study\好看的壁纸\mypicture\pages\wallpaper\wallpaper.ttss */
+@import "../search/search.ttss";
+.wp-nav{width: 100%;padding: 20rpx 20rpx 0;box-sizing: border-box;}
+.wp-nav image{width: 100%;height: 250rpx;}

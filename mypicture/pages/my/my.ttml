@@ -1,2 +1,13 @@
-<!-- i:\个人学习资料\xcx-study\好看的壁纸\mypicture\pages\my\my.ttml -->
-<text>i:\个人学习资料\xcx-study\好看的壁纸\mypicture\pages\my\my.ttml</text>
+<view class="container">
+    <view class="avatar-box">
+        <image src="../../images/icon/my.png" class="avatar">
+        </image>
+        <view>哈哈</view>
+    </view>
+    <view class="function">
+        <view class="f-item">
+            <image src="../../images/icon/collect.png" class="f-icon"></image>
+            <text>我的收藏</text>
+        </view>
+    </view>
+</view>

@@ -1,1 +1,4 @@
-/* i:\个人学习资料\xcx-study\好看的壁纸\mypicture\pages\my\my.ttss */
+.avatar-box {display: flex;flex-direction: column;align-items: center;padding:40rpx 0 100rpx}
+.avatar-box .avatar{width: 280rpx;height: 280rpx;border-radius: 50%;}
+.f-item{font-size: 14px;display: flex;flex-direction: row;align-items: center;background-color: #f1f1f1;padding:20rpx;}
+.f-icon{width: 60rpx;height: 60rpx;margin-right: 20rpx;}

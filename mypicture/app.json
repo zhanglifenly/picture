@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/detail/detail",
+    
     "pages/wallpaper/wallpaper",
     "pages/emoticon/emoticon",
     "pages/my/my"
@@ -12,6 +14,9 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color": "#333",
+    "selectedColor": "#fd573e",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/index/index",

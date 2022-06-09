@@ -11,8 +11,18 @@
   "projectname": "mypicture",
   "condition": {
     "miniprogram": {
-      "current": -1,
-      "list": []
+      "current": 1654743704646,
+      "list": [
+        {
+          "id": 1654743704646,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        }
+      ]
     }
   }
 }

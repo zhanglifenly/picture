@@ -1,0 +1,2 @@
+.buttons{display: flex;flex-direction: row;font-size: 14px;}
+.i-download{color: #fff;}

@@ -1,2 +1,7 @@
-<!-- i:\个人学习资料\xcx-study\好看的壁纸\mypicture\pages\wallpaper\wallpaper.ttml -->
-<text>i:\个人学习资料\xcx-study\好看的壁纸\mypicture\pages\wallpaper\wallpaper.ttml</text>
+<import src="../search/search.ttml" />
+<view class="container">
+    <template is="search"></template>
+    <view class="wp-nav" tt:for="{{wallpaperNavList}}">
+        <image src="{{item.src}}" ></image>
+    </view>
+</view>

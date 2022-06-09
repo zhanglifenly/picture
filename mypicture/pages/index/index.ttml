@@ -12,7 +12,7 @@
     </view>
     <view class="c-title">猜你喜欢</view>
     <view class="favorite">
-        <view class="item" tt:for="{{favoriteList}}">
+        <view class="item" tt:for="{{favoriteList}}" bindtap="todetail">
             <image src="{{item.src}}" class="poster"> </image>
         </view>
     </view>
