@@ -1,4 +1,4 @@
-.search{padding:10px;border: 1px solid #fd573e;background-color: #fd573e;display: flex;flex-direction: row;align-items: center;color:#fff}
-.search input {width: 100%;font-size: 14px;color:#fff;}
-.search .search-icon{color:#fff;}
-.search input::-moz-input-placeholder{color:#fff;}
+@import "../search-template/search.ttss";
+.prolist {display: flex;flex-direction: row;flex-wrap: wrap;}
+.prolist .item{width: 50%;padding:10rpx;box-sizing: border-box;}
+.prolist .item .poster{width: 100%;background-color: #fd573e;}

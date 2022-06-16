@@ -1,0 +1,7 @@
+<template name="search">
+    <view class="search">
+        <!-- <input type="text" placeholder="搜索" class="search-txt" disabled="true"/> -->
+        <text>搜索</text>
+        <icon class="search-icon" type="search"></icon>
+    </view>
+</template>

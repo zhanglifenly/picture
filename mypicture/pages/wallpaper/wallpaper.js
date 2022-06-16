@@ -1,14 +1,28 @@
-// i:\个人学习资料\xcx-study\好看的壁纸\mypicture\pages\wallpaper\wallpaper.js
+import { request } from '../../utils/utils'
+const app = getApp()
 Page({
   data: {
-    wallpaperNavList: [
-      { src: '../../images/pic.jpg' },
-      { src: '../../images/pic.jpg' },
-      { src: '../../images/pic.jpg' },
-      { src: '../../images/pic.jpg' }
-    ]
+    wallpaperNavList: []
   },
   onLoad: function (options) {
-
+    this.getWallPaper()
+  },
+  getWallPaper() {
+    let _ = this;
+    request(app.globalData.baseUrl + 'api/douyin/childCate', "GET", { cat_name: '壁纸' },
+      function success(res) {
+        _.setData({
+          wallpaperNavList: res.data.data
+        })
+        console.log(res)
+      })
+    // tt.navigateTo
+  },
+  toProList(e) {
+    let cat_id = e.currentTarget.dataset.id;
+    tt.navigateTo({
+      url: `/pages/prolist/prolist?id=${cat_id}`
+    })
+    
   }
 })

@@ -1,19 +1,21 @@
-<import src="../search/search.ttml" />
+<import src="../search-template/search.ttml" />
 <view class="container">
-    <template is="search"></template>
+    <view bindtap="toSearch">
+        <template is="search"></template>
+    </view>
     <view>
         <view class="c-title">栏目分类</view>
         <view class="navbar">
-            <view class="item" tt:for="{{navbarList}}">
-                <image src="{{item.src}}" bindload="bindload" class="poster"></image>
-                <view class="txt">{{item.title}}</view>
+            <view class="item" tt:for="{{navbarList}}" bindtap="toNavBar" data-name="{{item.cat_name}}" data-id="{{item.id}}">
+                <image src="{{item.src}}" class="poster"></image>
+                <view class="txt">{{item.cat_name}}</view>
             </view>
         </view>
     </view>
     <view class="c-title">猜你喜欢</view>
     <view class="favorite">
         <view class="item" tt:for="{{favoriteList}}" bindtap="todetail">
-            <image src="{{item.src}}" class="poster"> </image>
+            <image src="{{item.link}}" class="poster"> </image>
         </view>
     </view>
 </view>

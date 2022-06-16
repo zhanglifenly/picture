@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/detail/detail",
-    
+    "pages/prolist/prolist",
+    "pages/search/search",
     "pages/wallpaper/wallpaper",
     "pages/emoticon/emoticon",
     "pages/my/my"
@@ -13,6 +14,7 @@
     "navigationBarTitleText": "Mini Program",
     "navigationBarTextStyle": "black"
   },
+  
   "tabBar": {
     "color": "#333",
     "selectedColor": "#fd573e",

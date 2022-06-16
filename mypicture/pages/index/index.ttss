@@ -1,5 +1,5 @@
 
-@import "../search/search.ttss";
+@import "../search-template/search.ttss";
 
 .c-title{color:#fd573e;font-size: 16px;font-weight: bold;display: flex;flex-direction: row;padding:6px;}
 .c-title::before{content: "";width: 2px;height: 20px;background-color: #fd573e;display: inline-block;margin-right: 6px;}

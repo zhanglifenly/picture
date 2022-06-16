@@ -1,7 +1,8 @@
-<import src="../search/search.ttml" />
+<import src="../search-template/search.ttml" />
 <view class="container">
     <template is="search"></template>
     <view class="wp-nav" tt:for="{{wallpaperNavList}}">
-        <image src="{{item.src}}" ></image>
+        <!-- <image src="{{item.cate_name}}" ></image> -->
+        <text bindtap="toProList" data-id={{item.cat_id}}>{{item.cat_name}}</text>
     </view>
 </view>

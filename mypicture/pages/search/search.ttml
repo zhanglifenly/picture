@@ -1,6 +1,14 @@
-<template name="search">
+<view class="container">
     <view class="search">
-        <input type="text" placeholder="搜索" class="search-txt" />
-        <icon class="search-icon" type="search"></icon>
+        <input type="text" placeholder="搜索" class="search-txt" value="{{value}}" bindinput="handleInputSearch"/>
+        <icon class="search-icon" type="search" bindtap="search"></icon>
     </view>
-</template>
+    <view class="displaypro">
+        <view class="prolist" tt:if="{{hasdata}}">
+            <view class="item" tt:for="{{prolist}}">
+                <image src="{{item.link}}" class="poster" bindtap="toDetail"></image>
+            </view>
+        </view>
+        <view class="nodata" tt:else>{{nodata}}</view>
+    </view>
+</view>

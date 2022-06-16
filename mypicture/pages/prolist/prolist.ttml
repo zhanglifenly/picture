@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="item" tt:for="{{prolist}}">
+        <image src="{{item.link}}"></image>
+        <text>{{item.name}}</text>
+    </view>
+</view>
