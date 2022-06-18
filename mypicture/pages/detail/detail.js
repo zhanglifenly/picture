@@ -1,14 +1,25 @@
 const app = getApp() 
+import { request } from '../../utils/utils'
 //获取激励广告唯一对象 
 var rewardedVideoAdObj = app.globalData.videoAd;
 Page({
   data: {
-
+    bigImg:'',
+    smallImg: ''
   },
   onLoad: function (options) {
-
+    this.getImg(options.id)
   },
-
+  getImg(id){
+    let _ = this;
+    request(`api/douyin/picDetail?picture_id=${id}`,"GET",{},
+    function success(res){
+      _.setData({
+        smallImg: res.data.data.thumb_img
+      })
+      console.log(res)
+    })
+  },
   //用户点击触发的激励广告
   showRewardedVideoAd() {
     let _ = this;

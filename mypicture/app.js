@@ -14,16 +14,21 @@ App({
     tt.login({
       force: true,
       success(res) {
-        _.getSession();
+        console.log(res,'login')
         // 成功发起请求，记录数据
         request(_.globalData.baseUrl + "api/douyin/login", 'POST', { code: res.code },
           function success(res) {
-            // console.log("su", res)
+            if(res.code === 0) {
+              _.getSession();
+            } else{
+              console.log('error code -1')
+            }
           },
           function fail(err) {
-            // console.log("sb", err)
+            console.log("sb", err)
           }
         )
+        
       }
     })
   },

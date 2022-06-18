@@ -1,6 +1,6 @@
-<view class="container">
-    <view class="item" tt:for="{{prolist}}">
-        <image src="{{item.link}}"></image>
-        <text>{{item.name}}</text>
+<view class="container prolist">
+    <view class="item" tt:for="{{prolist}}" bindtap="todetail" data-id="{{item.id}}">
+        <image src="{{item.link}}" class="poster"></image>
+        <text class="title">{{item.name}}</text>
     </view>
 </view>

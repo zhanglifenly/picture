@@ -16,7 +16,7 @@
         {
           "id": 1654743704646,
           "name": "pages/search/index",
-          "pathName": "pages/wallpaper/wallpaper",
+          "pathName": "pages/index/index",
           "query": "",
           "scene": "990001",
           "launchFrom": "scan",
